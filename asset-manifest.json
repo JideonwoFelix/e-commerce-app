@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JideonwoFelixx/e-commerce-app/static/css/main.3745658e.css",
-    "main.js": "/JideonwoFelixx/e-commerce-app/static/js/main.b8036410.js",
-    "static/js/787.7b6af06b.chunk.js": "/JideonwoFelixx/e-commerce-app/static/js/787.7b6af06b.chunk.js",
-    "index.html": "/JideonwoFelixx/e-commerce-app/index.html",
-    "main.3745658e.css.map": "/JideonwoFelixx/e-commerce-app/static/css/main.3745658e.css.map",
-    "main.b8036410.js.map": "/JideonwoFelixx/e-commerce-app/static/js/main.b8036410.js.map",
-    "787.7b6af06b.chunk.js.map": "/JideonwoFelixx/e-commerce-app/static/js/787.7b6af06b.chunk.js.map"
+    "main.css": "./static/css/main.3745658e.css",
+    "main.js": "./static/js/main.82eb310b.js",
+    "static/js/787.7b6af06b.chunk.js": "./static/js/787.7b6af06b.chunk.js",
+    "index.html": "./index.html",
+    "main.3745658e.css.map": "./static/css/main.3745658e.css.map",
+    "main.82eb310b.js.map": "./static/js/main.82eb310b.js.map",
+    "787.7b6af06b.chunk.js.map": "./static/js/787.7b6af06b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3745658e.css",
-    "static/js/main.b8036410.js"
+    "static/js/main.82eb310b.js"
   ]
 }
