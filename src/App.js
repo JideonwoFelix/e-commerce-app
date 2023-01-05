@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FirebaseQueryExample from './examples/firebase_query'
+import FirebaseQueryExample from '@examples/firebase_query'
 
 
 function App() {
