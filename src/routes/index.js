@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "@pages";
 import TestPage1 from "@pages/test_page1";
 import TestPage2 from "@pages/test_page2";
+import FilterStrip from "@components/widgets/filter_strip";
 import {
   createHashRouter,
   // createBrowserRouter,
@@ -37,6 +38,7 @@ const router = createHashRouter([
         <>
           <TempNav/>
           <div>Home Page</div>
+          <FilterStrip/>
         </>
       ,
     }
