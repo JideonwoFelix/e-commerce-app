@@ -14,12 +14,11 @@ export default function HomePage() {
   ]
   return (
     <>
-        <TempNav/>
-        <FilterStrip/>
-        <BestDealsSection/>
-        <HomeSection section_name={'New Arrival'} section_products={tempItems} />
-        <div>New Arrivals</div>
-        <div>Trending Now</div>
+      <TempNav/>
+      <FilterStrip/>
+      <BestDealsSection/>
+      <HomeSection section_name={'New Arrival'} section_products={tempItems} />
+      <HomeSection section_name={'Trending Now'} section_products={tempItems} />\
     </>
   )
 }
