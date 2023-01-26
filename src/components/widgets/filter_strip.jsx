@@ -30,7 +30,9 @@ const categories = ['Furniture','Gadget', 'Fashion', 'Beauty', 'Accessories'];
 const style = {
 
     containerDiv: {
-        // display: 'flex'
+        // display: 'flex',
+        marginTop: '30px',
+        marginBottom: '30px',
     },
     carousel: {
         width: '100%',

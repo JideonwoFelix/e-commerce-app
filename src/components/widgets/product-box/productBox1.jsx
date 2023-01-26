@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import formatToCurrency from 'src/hooks/currency-formatter';
 
 // export default function ProductBox1() {
 //   return (
@@ -7,7 +8,13 @@ import React from 'react'
 // }
 class ProductBox1 extends React.Component {
     render() {
-      return <h2>Hi, I am a Car!</h2>;
+      return (
+            <div className='p-4'>
+                <img alt={this.props.item.name} src={this.props.item.img ? this.props.item.img : 'product-imgs/Default_Image_Thumbnail.png'}/>
+                <div className='font-bold'>{this.props.item.name}</div>
+                <div className=''>{formatToCurrency('N', this.props.item.price)}</div>
+            </div>
+        );
     }
   }
 
