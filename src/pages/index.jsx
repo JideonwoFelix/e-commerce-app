@@ -3,6 +3,7 @@ import TempNav from '@layouts/TempNav';
 import BestDealsSection from '@components/homeSections/best-deals';
 import HomeSection from '@components/homeSections/home-section';
 import FilterStrip from '@components/widgets/filter_strip';
+import Banner from '@components/homeSections/banner';
 
 export default function HomePage() {
   const tempItems = [
@@ -15,10 +16,11 @@ export default function HomePage() {
   return (
     <>
       <TempNav/>
+      <Banner/>
       <FilterStrip/>
       <BestDealsSection/>
       <HomeSection section_name={'New Arrival'} section_products={tempItems} />
-      <HomeSection section_name={'Trending Now'} section_products={tempItems} />\
+      <HomeSection section_name={'Trending Now'} section_products={tempItems} />
     </>
   )
 }
