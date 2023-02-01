@@ -9,7 +9,7 @@ export default function Banner() {
             <div className='text-2xl shadow-md rounded-3xl py-3 px-6 my-2'>UP TO 75% OFF</div>
             <div className=''>GADGETS, APPLIANCES AND <br/> AND FASHION</div>
         </div>
-        <img src='./banner-image-1.png' alt='banner image' width={300}/>
+        <img src='./banner-image-1.png' alt='banner' width={300}/>
     </div>
   )
 }

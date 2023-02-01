@@ -12,8 +12,8 @@ const tempItems = [
 export default function BestDealsSection() {
   return (
     <section>
-        <div>Best Deals</div>
-        <div className='flex'>
+        <div className=''>Best Deals</div>
+        <div className='flex home_sect-bg-gradient-theme-1 p-10'>
             {tempItems.map(item =>(
                 <ProductBox1 item={item}/>
             ))}

@@ -37,6 +37,10 @@ const style = {
     carousel: {
         width: '100%',
     },
+    strip: {
+        width: '100%',
+        display: 'flex'
+    },
     indivButton: {
         padding: '3px 10px',
         width: 'fit-content',
@@ -66,15 +70,15 @@ export default function FilterStrip() {
                     }
             </Carousel>
         </div> */}
-        <Carousel responsive={responsive} style={style.carousel}>
+        <div style={style.strip}>
             {
                 categories.map(e=>(
-                    <div style={style.indivButton}>{e}</div>
+                    <div style={style.indivButton} className='mx-3'>{e}</div>
                 ))
                 }
-        </Carousel>
+        </div>
 
-        <div style={style.sortButton}>Sort By</div>
+        <div style={style.sortButton} className='whitespace-nowrap'>Sort By</div>
     </div>
     
   )
