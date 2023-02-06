@@ -22,8 +22,10 @@ code {
   justify-content: space-between;
   padding: 30px 20px;
 }
-.navlinks a{
+.navlinks .navlink{
   margin-inline: 20px;
+  color: white;
+  font-weight: bold;
 }
 .navbtns input {
   background-color: #4C2B18;

@@ -9,7 +9,8 @@ import {
   RouterProvider,
   Link
 } from "react-router-dom";
-import TempNav from "@layouts/TempNav";
+// import TempNav from "@layouts/TempNav";
+import Navbar  from "@layouts/Navbar";
 
 
 // had to it to "createHashRouter" instead of "createBrowserRouter" because the gh-pages deosn't seem to support the later in routing
@@ -36,7 +37,7 @@ const router = createHashRouter([
       path: "/test-page3",
       element: 
         <>
-          <TempNav/>
+          <Navbar/>
           <div>Home Page</div>
           <FilterStrip/>
         </>
