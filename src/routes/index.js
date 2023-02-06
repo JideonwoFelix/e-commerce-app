@@ -2,6 +2,7 @@ import React from "react";
 import HomePage from "@pages";
 import TestPage1 from "@pages/test_page1";
 import TestPage2 from "@pages/test_page2";
+import UploadToDB from "@pages/upload_to_db";
 import FilterStrip from "@components/widgets/filter_strip";
 import {
   createHashRouter,
@@ -31,6 +32,10 @@ const router = createHashRouter([
     {
       path: "/test-page2",
       element: <TestPage2/>,
+    },
+    {
+      path: "/upload-products",
+      element: <UploadToDB/>,
     },
     {
       path: "/test-page3",
