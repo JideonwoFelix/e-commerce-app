@@ -1,14 +1,15 @@
 .navbar {
   background-color: #B89168;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 20px;
+  height: 70px;
+  /* padding: 30px 20px; */
 }
-.navlinks .navlink{
+
+.navbar-menu .nav-item{
   margin-inline: 20px;
   color: white;
   font-weight: bold;
 }
+
 .navbtns input {
   background-color: #4C2B18;
   border-radius: 50px;
@@ -17,4 +18,80 @@
 }
 .navbtns button {
   margin-inline: 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+  }
+  .navbar-logo {
+    padding-left: 20px;
+  }
+  .navbar-toggle {
+    padding-right: 20px;
+  }
+  .navbar-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
+  }
+  .navbar-logo {
+   align-self: center;
+  }
+  .navbar-menu {
+    position: absolute;
+    margin-top: 70px;
+    
+    width: 100%;
+    z-index: 9999;
+    background-color: #B89168;
+    display: none;
+    padding-bottom: 50px;
+  }
+  .open {
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+  }
+  .navbtns {
+    display: none;
+  }
+ 
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }
