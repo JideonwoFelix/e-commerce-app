@@ -2,7 +2,7 @@ import React from "react";
 import HomePage from "@pages";
 import TestPage1 from "@pages/test_page1";
 import TestPage2 from "@pages/test_page2";
-import FilterStrip from "@components/widgets/filter_strip";
+import FilterStrip from "@components/widgets/filter-strip";
 import {
   createHashRouter,
   // createBrowserRouter,
@@ -21,9 +21,10 @@ const router = createHashRouter([
     element: 
       <>
         <HomePage/>
-      </>,
-      errorElement: <div className="text-center">Error, Page Not Found <br/> Go Back <Link className="text-blue-400" to={'/'}>Home</Link></div>,
-      children:[]
+      </>
+      // ,
+      // errorElement: <div className="text-center">Error, Page Not Found <br/> Go Back <Link className="text-blue-400" to={'/'}>Home</Link></div>,
+      // children:[]
     },
     {
       path: "/test-page1",

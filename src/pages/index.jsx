@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@layouts/Navbar';
 import BestDealsSection from '@components/homeSections/best-deals';
 import HomeSection from '@components/homeSections/home-section';
-import FilterStrip from '@components/widgets/filter_strip';
+import FilterStrip from '@components/widgets/filter-strip';
 
 export default function HomePage() {
   const tempItems = [
@@ -19,7 +19,7 @@ export default function HomePage() {
       <FilterStrip/>
       <BestDealsSection/>
       <HomeSection section_name={'New Arrival'} section_products={tempItems} />
-      <HomeSection section_name={'Trending Now'} section_products={tempItems} />\
+      <HomeSection section_name={'Trending Now'} section_products={tempItems} />
     </>
   )
 }
