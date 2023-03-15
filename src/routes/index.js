@@ -3,14 +3,15 @@ import HomePage from "@pages";
 import TestPage1 from "@pages/test_page1";
 import TestPage2 from "@pages/test_page2";
 import UploadToDB from "@pages/upload_to_db";
-import FilterStrip from "@components/widgets/filter_strip";
+import FilterStrip from "@components/widgets/filter-strip";
 import {
   createHashRouter,
   // createBrowserRouter,
   RouterProvider,
   Link
 } from "react-router-dom";
-import TempNav from "@layouts/TempNav";
+// import TempNav from "@layouts/TempNav";
+import Navbar  from "@layouts/Navbar";
 
 
 // had to it to "createHashRouter" instead of "createBrowserRouter" because the gh-pages deosn't seem to support the later in routing
@@ -21,9 +22,10 @@ const router = createHashRouter([
     element: 
       <>
         <HomePage/>
-      </>,
-      errorElement: <div className="text-center">Error, Page Not Found <br/> Go Back <Link className="text-blue-400" to={'/'}>Home</Link></div>,
-      children:[]
+      </>
+      // ,
+      // errorElement: <div className="text-center">Error, Page Not Found <br/> Go Back <Link className="text-blue-400" to={'/'}>Home</Link></div>,
+      // children:[]
     },
     {
       path: "/test-page1",
@@ -41,7 +43,7 @@ const router = createHashRouter([
       path: "/test-page3",
       element: 
         <>
-          <TempNav/>
+          <Navbar/>
           <div>Home Page</div>
           <FilterStrip/>
         </>

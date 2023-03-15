@@ -6,9 +6,9 @@ export default function HomeSection(props) {
   return (
     <section>
         <div>{props.section_name}</div>
-        <div className='flex'>
+        <div className='flex flex-wrap'>
             {props.section_products.map(item =>(
-                <ProductBox1 item={item}/>
+                <ProductBox1 item={item} widthclass='w-1/2 md:w-1/4'/>
             ))}
         </div>
     </section>

@@ -1,9 +1,9 @@
 import React from 'react';
-import TempNav from '@layouts/TempNav';
+// import TempNav from '@layouts/TempNav';
+import Navbar from '@layouts/Navbar';
 import BestDealsSection from '@components/homeSections/best-deals';
 import HomeSection from '@components/homeSections/home-section';
-import FilterStrip from '@components/widgets/filter_strip';
-import Banner from '@components/homeSections/banner';
+import FilterStrip from '@components/widgets/filter-strip';
 
 export default function HomePage() {
   const tempItems = [
@@ -15,8 +15,7 @@ export default function HomePage() {
   ]
   return (
     <>
-      <TempNav/>
-      <Banner/>
+      <Navbar/>
       <FilterStrip/>
       <BestDealsSection/>
       <HomeSection section_name={'New Arrival'} section_products={tempItems} />
