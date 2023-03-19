@@ -7,10 +7,11 @@ import {
   createHashRouter,
   // createBrowserRouter,
   RouterProvider,
-  Link
+  // Link
 } from "react-router-dom";
 // import TempNav from "@layouts/TempNav";
 import Navbar  from "@layouts/Navbar";
+import FirebaseQueryExample from "@examples/firebase_query";
 
 
 // had to it to "createHashRouter" instead of "createBrowserRouter" because the gh-pages deosn't seem to support the later in routing
@@ -41,6 +42,15 @@ const router = createHashRouter([
           <Navbar/>
           <div>Home Page</div>
           <FilterStrip/>
+        </>
+      ,
+    },
+    {
+      path: "/upload-page",
+      element: 
+        <>
+          <Navbar/>
+          <FirebaseQueryExample/>
         </>
       ,
     }
