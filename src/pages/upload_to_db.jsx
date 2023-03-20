@@ -3,7 +3,22 @@ import React from 'react'
 import { collection, addDoc } from "firebase/firestore";
 import {db} from '@config/FirebaseConfig';
 
+import { useEffect } from 'react';
+// import { initializeApp } from 'firebase/app';
+// import {firebaseConfig} from '../config/FirebaseConfig';
+// import { getFirestore, getDocs } from "firebase/firestore";
+import useFirestoreGet from 'src/hooks/useFirestoreGet';
+import useFirestoreGet_v2 from 'src/hooks/useFirestoreGet_v2';
+
+
 export default function UploadToDB() {
+    
+    let ProductCategories=useFirestoreGet_v2('categories');
+    useEffect(()=>{
+        console.log('item', ProductCategories);
+        // console.log(ProductCategories;d
+    }, [ProductCategories])
+
   return (
     <>
         <TempNav/>
@@ -14,17 +29,42 @@ export default function UploadToDB() {
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-name">
-                        Product Name
-                    </label>
-                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border xiborder-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="product-name" type="text" placeholder="Product" name="product_name"/>
-                    {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-name">
+                            Product Name
+                        </label>
+                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border xiborder-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="product-name" type="text" placeholder="Product" name="product_name"/>
+                        {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
                     </div>
                     <div className="w-full md:w-1/2 px-3">
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-cost">
-                        Product Cost
-                    </label>
-                    <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="product-cost" type="number" placeholder="00.00" name='product_cost'/>
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-cost">
+                            Product Cost
+                        </label>
+                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="product-cost" type="number" placeholder="00.00" name='product_cost'/>
+                    </div>
+                </div>
+                <div className="flex flex-wrap -mx-3 mb-6">
+                    <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-name">
+                            Upload Image
+                        </label>
+                        <input className="appearance-none block w-full bg-gray-200 text-gray-700 border xiborder-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="product-img" type="file" name="product_img"/>
+                        {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
+                    </div>
+                    <div className="w-full md:w-1/2 px-3">
+                        <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="product-cost">
+                            Category
+                        </label>
+                        <select className="xappearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="product-category" name='product_category'>
+                            <option value="" disabled defaultValue>Select Category</option>
+                            { console.log('inside option',ProductCategories[0])}
+                            {
+                                ProductCategories[0] !==null? ProductCategories[0].map((e)=>{
+                                    return(
+                                        <option value={e.cat_name} key={e.id}>{e.cat_name}</option>
+                                    )
+                                }):''
+                            } 
+                        </select>
                     </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-6">

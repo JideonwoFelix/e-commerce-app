@@ -24,7 +24,9 @@ function FirebaseQueryExample() {
             console.log('inside fetch', Data)
         }
         FirebaseQuery('products');
-    }, [Data])
+      }, 
+      // [Data]
+    )
 
 
 
