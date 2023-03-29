@@ -22,9 +22,6 @@ const router = createHashRouter([
       <>
         <HomePage/>
       </>
-      // ,
-      // errorElement: <div className="text-center">Error, Page Not Found <br/> Go Back <Link className="text-blue-400" to={'/'}>Home</Link></div>,
-      // children:[]
     },
     {
       path: "/test-page1",

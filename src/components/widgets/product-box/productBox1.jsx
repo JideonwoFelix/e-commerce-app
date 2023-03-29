@@ -18,4 +18,4 @@ class ProductBox1 extends React.Component {
     }
   }
 
-export default ProductBox1
+export default ProductBox1;
