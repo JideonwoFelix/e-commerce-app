@@ -70,7 +70,7 @@ export default function FilterStrip() {
             >
                 {
                     categories.map(e=>(
-                        <FilterStripBox category={e}/>
+                        <FilterStripBox category={e} key={e}/>
                     ))
                 }
             </Carousel>

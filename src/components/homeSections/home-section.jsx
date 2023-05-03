@@ -8,7 +8,7 @@ export default function HomeSection(props) {
         <div>{props.section_name}</div>
         <div className='flex flex-wrap'>
             {props.section_products.map(item =>(
-                <ProductBox1 item={item} widthclass='w-1/2 md:w-1/4'/>
+                <ProductBox1 item={item} widthclass='w-1/2 md:w-1/4' key={item.id}/>
             ))}
         </div>
     </section>

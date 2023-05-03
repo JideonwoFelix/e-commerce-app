@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Button from '@components/UI/Button';
 
-const ProductDescription =()=>{
+const ProductDescription = ()=>{
     const [count,setCounter] = useState(0);
 
     const increment = ()=>{

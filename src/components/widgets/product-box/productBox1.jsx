@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import formatToCurrency from 'src/hooks/currency-formatter';
 
 // export default function ProductBox1() {
@@ -9,11 +10,13 @@ import formatToCurrency from 'src/hooks/currency-formatter';
 class ProductBox1 extends React.Component {
     render() {
       return (
-            <div className={`p-4 ${this.props.widthclass}`}>
+        <Link to={'/product-details'} className={`p-4 ${this.props.widthclass}`}>
+            <div>
                 <img alt={this.props.item.name} src={this.props.item.img ? this.props.item.img : 'product-imgs/Default_Image_Thumbnail.png'}/>
                 <div className='font-bold'>{this.props.item.name}</div>
                 <div className=''>{formatToCurrency('N', this.props.item.price)}</div>
             </div>
+        </Link>
         );
     }
   }
