@@ -31,7 +31,7 @@ export default function FilterStripBox(props) {
   return (
     <div className='mx-10'>
         <div className='w-[200px]'>
-            <div className='bg-[#B89168] rounded-lg p-2 mb-2 w-[200px] xh-[200px]'>
+            <div className='bg-[#B89168] rounded-lg p-2 mb-2 w-[200px] h-[200px]'>
                 <img src={props.category.thumbnail ? props.category.thumbnail : 'product-imgs/Default_Image_Thumbnail.png'} alt=""  className='w-full'/>
             </div>
             <div style={style.indivButton} className='mx-auto flex items-baseline gap-2'>

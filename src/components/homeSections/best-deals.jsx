@@ -36,7 +36,7 @@ export default function BestDealsSection() {
 
   
   return (
-    <section>
+    <section className='mx-10'>
         <div>Best Deals</div>
         <Carousel 
             responsive={responsive} 
