@@ -2,7 +2,8 @@ import React from 'react';
 // import TempNav from '@layouts/TempNav';
 import Navbar from '@layouts/Navbar';
 import BestDealsSection from '@components/homeSections/best-deals';
-import HomeSection from '@components/homeSections/home-section';
+import HomeSectionCarousel from '@components/homeSections/home-section-carousel';
+import HomeSectionGrid from '@components/homeSections/home-section-grid';
 import FilterStrip from '@components/widgets/filter-strip';
 
 export default function HomePage() {
@@ -19,8 +20,8 @@ export default function HomePage() {
       <Navbar/>
       <FilterStrip/>
       <BestDealsSection/>
-      <HomeSection section_name={'New Arrival'} section_products={tempItems} />
-      <HomeSection section_name={'Trending Now'} section_products={tempItems} />
+      <HomeSectionGrid section_name={'New Arrival'} section_products={tempItems} />
+      <HomeSectionCarousel section_name={'Trending Now'} section_products={tempItems} />
     </>
   )
 }

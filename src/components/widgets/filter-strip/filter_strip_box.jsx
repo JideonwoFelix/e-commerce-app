@@ -30,10 +30,15 @@ export default function FilterStripBox(props) {
 
   return (
     <div className='mx-10'>
-        <div className='bg-[#B89168] rounded-lg p-4 mb-2'>
-            <img src={props.category.img ? props.category.img : 'product-imgs/Default_Image_Thumbnail.png'} alt="" />
+        <div className='w-[200px]'>
+            <div className='bg-[#B89168] rounded-lg p-2 mb-2 w-[200px] xh-[200px]'>
+                <img src={props.category.thumbnail ? props.category.thumbnail : 'product-imgs/Default_Image_Thumbnail.png'} alt=""  className='w-full'/>
+            </div>
+            <div style={style.indivButton} className='mx-auto flex items-baseline gap-2'>
+                <div>{props.category.name}</div>
+                <img src="icons/dropdown-caret.svg" alt="" />
+            </div>
         </div>
-        <div style={style.indivButton} className='mx-auto'>{props.category}</div>
     </div>
   )
 }

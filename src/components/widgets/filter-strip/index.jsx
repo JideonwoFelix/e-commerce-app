@@ -30,7 +30,33 @@ const responsive = {
     }
 };
 
-const categories = ['Furniture','Gadget', 'Fashion', 'Beauty', 'Accessories'];
+// const categories = ['Furniture','Gadget', 'Fashion', 'Beauty', 'Accessories'];
+const categories = [
+    {
+        name: 'Accessories',
+        thumbnail: 'product-imgs/hand-bag.png'
+    },
+    {
+        name: 'Fashion',
+        thumbnail: 'product-imgs/woman-bag.png'
+    }, 
+    {
+        name: 'Gadget',
+        thumbnail: 'product-imgs/iPhone-13.png'
+    }, 
+    {
+        name: 'Electronics',
+        thumbnail: 'product-imgs/tv.png'
+    }, 
+    {
+        name: 'Furniture',
+        thumbnail: 'product-imgs/chair.png'
+    },
+    {
+        name: 'Beauty',
+        thumbnail: ''
+    },
+];
 const style = {
 
     containerDiv: {
@@ -54,7 +80,8 @@ const style = {
         backgroundColor: '#FAF2E0',
         borderRadius: '20px',
         textAlign: 'center',
-        border: '1px solid #000000'
+        boxShadow: '0px 5px 10px #aaa'
+        // border: '1px solid #000000'
     }
 }
 
@@ -76,9 +103,15 @@ export default function FilterStrip() {
             </Carousel>
 
         </div>
-        <div className='w-full px-4 flex justify-between'>
-            <div style={style.sortButton}>All Products</div>
-            <div style={style.sortButton}>Sort By</div>
+        <div className='w-full px-4 flex justify-between mt-4'>
+            <div style={style.sortButton} className='flex items-baseline gap-2'>
+                All Products
+                <img src="icons/dropdown-caret.svg" alt="" />
+            </div>
+            <div style={style.sortButton} className='flex items-baseline gap-2'>
+                Sort By
+                <img src="icons/dropdown-caret.svg" alt="" />
+            </div>
         </div>
     </div>
     

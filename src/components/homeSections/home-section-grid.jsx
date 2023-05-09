@@ -2,7 +2,7 @@ import React from 'react';
 import ProductBox1 from '@components/widgets/product-box/productBox1';
 
 
-export default function HomeSection(props) {
+export default function HomeSectionGrid(props) {
   return (
     <section>
         <div>{props.section_name}</div>
