@@ -34,7 +34,6 @@ const tempItems = [
 
 export default function HomeSectionCarousel(props) {
 
-  
   return (
     <section>
       <div>{props.section_name}</div>

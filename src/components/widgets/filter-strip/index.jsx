@@ -87,7 +87,7 @@ const style = {
 
 export default function FilterStrip() {
   return (
-    <div  style={style.containerDiv} className='fiiter_strip'>
+    <div  style={style.containerDiv} className='fiiter_strip bg-gradient-to-b from-[#faf2e0] to-[#ffffff] px-10 p-5'>
         <div>
             <Carousel 
                 responsive={responsive} 

@@ -10,7 +10,7 @@ import formatToCurrency from 'src/hooks/currency-formatter';
 class ProductBox1 extends React.Component {
     render() {
       return (
-        <Link to={'/product-details'} className={`p-4 ${this.props.widthclass}`}>
+        <Link to={'/product-details'} className={`p-4${this.props.widthclass}x`}>
             <div>
                 <img alt={this.props.item.name} src={this.props.item.img ? this.props.item.img : 'product-imgs/Default_Image_Thumbnail.png'}/>
                 <div className='font-bold'>{this.props.item.name}</div>
