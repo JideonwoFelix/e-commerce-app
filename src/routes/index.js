@@ -13,6 +13,7 @@ import {
 import Navbar  from "@layouts/Navbar";
 import FirebaseQueryExample from "@examples/firebase_query";
 import ProductDetails from "@pages/product-details";
+import UploadNewProduct from "@pages/upload-new-product";
 
 
 // had to it to "createHashRouter" instead of "createBrowserRouter" because the gh-pages deosn't seem to support the later in routing
@@ -49,12 +50,18 @@ const router = createBrowserRouter([
       ,
     },
     {
-      path: "/upload-page",
+      path: "/firebase-example",
       element: 
         <>
           <Navbar/>
           <FirebaseQueryExample/>
         </>
+      ,
+    },
+    {
+      path: "/upload-page",
+      element: 
+        <UploadNewProduct/>
       ,
     }
 ]);

@@ -32,11 +32,11 @@ function FirebaseQueryExample() {
 
   return (
     <ul className="list">
-        {Data.map(e=>(
-            <li key={Data.indexOf(e)}>
-                {e.name}
-            </li>
-        ))}
+      {Data.map(e=>(
+          <li key={Data.indexOf(e)}>
+              {e.name}
+          </li>
+      ))}
     </ul>
   );
 }
